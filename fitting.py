@@ -26,7 +26,7 @@ print('-----')
 
 print(train.shape, test.shape)
 
-model = ARIMA(train['close'], order=(3, 1, 3), enforce_stationarity=False, enforce_invertibility=False)
+model = ARIMA(train['close'], order=(3, 1, 2), enforce_stationarity=False, enforce_invertibility=False)
 
 print(datetime.now().strftime("%H:%M:%S"))
 
@@ -35,7 +35,7 @@ model = model.fit()
 print(datetime.now().strftime("%H:%M:%S"))
 
 summary = model.summary()
-model.save(r'C:\Users\HP\Documents\DS\baigiamasis\trained_models\ARIMA\(3, 1, 3)_10--4')
+model.save(r'C:\Users\HP\Documents\DS\baigiamasis\trained_models\ARIMA\(3, 1, 2)_10--4')
 
 print(summary)
 
