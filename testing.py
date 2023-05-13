@@ -2,13 +2,14 @@ import pandas as pd
 from statsmodels.tsa.arima.model import ARIMAResults
 import matplotlib.pyplot as plt
 
-path = r'C:\Users\HP\Documents\DS\datasets\Binance_1min_candlesticks\BTC-USDT.parquet'
-df = pd.read_parquet(path)
+path = r'C:\Users\HP\Documents\DS\datasets\BTC-USDT'
+df = pd.read_csv(path)
+
+print(df)
 
 size = 1000                 # naudojamos dataset'o dalies dydis
 
 df = df.tail(size)          # imamos paskutines 1000 eiluciu
-df = df.set_index(pd.DatetimeIndex(df.index).to_period('T'))
 
 size = df.shape
 print(size)
