@@ -16,4 +16,4 @@ log+mean+standarddev.py - transformuoja kainas logaritmu, o tada skaičiuoja rol
 train_test_visualization - vizualiai atvaizduoja train ir test segmentus grafike
 
 
-Problema - testuojant modelius su skirtingais parametrais generuojamos identiškos arba labai mažai besiskiriančios ir kylančios vertės (prognozės)
+Problema - testuojant modelius su skirtingais parametrais generuojamos identiškos arba labai mažai besiskiriančios ir kylančios vertės
